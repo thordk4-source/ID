@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="da">
+<style>
+.idfoto {
+  width: 88px !important;
+  height: 88px !important;
+  min-width: 88px;
+  object-fit: cover;          /* beskærer i stedet for at strække */
+  object-position: center 25%; /* holder ansigtet i billedet */
+  border-radius: 50%;
+  display: block;
+  flex: 0 0 auto;
+}
+</style>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -2510,6 +2522,7 @@ function loginSuccess() {
           <img
             id="cardPhotoDisplay"
             src="card.png"
+            class="idfoto"
             alt=""
             style="
               width:100%;
@@ -2592,6 +2605,7 @@ function loginSuccess() {
 
           <img
             src="card.png"
+            class="idfoto"
             alt="card.png"
             style="width:100%;height:100%;object-fit:cover;display:block;"
           >
@@ -2706,6 +2720,7 @@ function loginSuccess() {
       <div id="qrPhotoDisplay" style="width:140px;height:170px;border-radius:10px;overflow:hidden;background:#D0D0D5;margin-bottom:14px;">
         <img
           src="card.png"
+          class="idfoto"
           alt="Demo billede"
           style="width:100%;height:100%;object-fit:cover;display:block;"
         >
