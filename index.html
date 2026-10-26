@@ -2506,20 +2506,16 @@ function loginSuccess() {
       <div class="card-body">
 
         <!-- BILLEDE -->
-        <div class="card.png">
-          <img
-            id="cardPhotoDisplay"
-            src="card.png"
-            class="idfoto"
-            alt=""
-            style="
-              width:100%;
-              height:100%;
-              object-fit:cover;
-              display:block;
-            "
-          >
-        </div>
+       
+<div class="cardPhoto">
+  <img
+    id="cardPhotoDisplay"
+    src="card.png"
+    class="idfoto"
+    alt=""
+    style="width:100% !important; height:100% !important; object-fit:cover; object-position:center 25%; display:block;"
+  >
+</div>
 
 
         <!-- TEKST -->
@@ -3360,15 +3356,13 @@ document.addEventListener('mouseup', function(e){
 });
 </script>
   <style>
-  .idfoto, img.idfoto {
+  .cardPhoto {
     width: 88px !important;
     height: 88px !important;
-    min-width: 88px !important;
-    max-width: 88px !important;
-    object-fit: cover !important;
-    object-position: center 25% !important;
-    border-radius: 50% !important;
-    display: block !important;
+    min-width: 88px;
+    width: 70px; height: 90px;
+    overflow: hidden;
+    flex: 0 0 auto;
   }
 </style>
 </body>
