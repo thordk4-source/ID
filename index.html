@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="da">
-<style>
-.idfoto {
-  width: 88px !important;
-  height: 88px !important;
-  min-width: 88px;
-  object-fit: cover;
-  object-position: center 25%; 
-  border-radius: 50%;
-  display: block;
-  flex: 0 0 auto;
-}
-</style>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -3371,6 +3359,18 @@ document.addEventListener('mouseup', function(e){
   carouselGoTo(next);
 });
 </script>
+  <style>
+  .idfoto, img.idfoto {
+    width: 88px !important;
+    height: 88px !important;
+    min-width: 88px !important;
+    max-width: 88px !important;
+    object-fit: cover !important;
+    object-position: center 25% !important;
+    border-radius: 50% !important;
+    display: block !important;
+  }
+</style>
 </body>
 </html>
 
